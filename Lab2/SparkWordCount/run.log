@@ -1,0 +1,405 @@
+26/08/03 01:46:12 WARN Utils: Your hostname, sara-VirtualBox resolves to a loopback address: 127.0.1.1; using 10.0.2.15 instead (on interface enp0s3)
+26/08/03 01:46:13 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+26/08/03 01:46:13 INFO SparkContext: Running Spark version 3.5.0
+26/08/03 01:46:13 INFO SparkContext: OS info Linux, 6.14.0-37-generic, amd64
+26/08/03 01:46:13 INFO SparkContext: Java version 17.0.19
+26/08/03 01:46:13 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/08/03 01:46:13 INFO ResourceUtils: ==============================================================
+26/08/03 01:46:13 INFO ResourceUtils: No custom resources configured for spark.driver.
+26/08/03 01:46:13 INFO ResourceUtils: ==============================================================
+26/08/03 01:46:13 INFO SparkContext: Submitted application: wordCount
+26/08/03 01:46:13 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+26/08/03 01:46:13 INFO ResourceProfile: Limiting resource is cpu
+26/08/03 01:46:13 INFO ResourceProfileManager: Added ResourceProfile id: 0
+26/08/03 01:46:13 INFO SecurityManager: Changing view acls to: sara
+26/08/03 01:46:13 INFO SecurityManager: Changing modify acls to: sara
+26/08/03 01:46:13 INFO SecurityManager: Changing view acls groups to: 
+26/08/03 01:46:13 INFO SecurityManager: Changing modify acls groups to: 
+26/08/03 01:46:13 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: sara; groups with view permissions: EMPTY; users with modify permissions: sara; groups with modify permissions: EMPTY
+26/08/03 01:46:14 INFO Utils: Successfully started service 'sparkDriver' on port 40555.
+26/08/03 01:46:14 INFO SparkEnv: Registering MapOutputTracker
+26/08/03 01:46:14 INFO SparkEnv: Registering BlockManagerMaster
+26/08/03 01:46:14 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+26/08/03 01:46:14 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+26/08/03 01:46:14 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+26/08/03 01:46:14 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-228f78f0-5782-4c69-bb96-2efa3995d980
+26/08/03 01:46:14 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+26/08/03 01:46:14 INFO SparkEnv: Registering OutputCommitCoordinator
+26/08/03 01:46:14 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+26/08/03 01:46:14 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+26/08/03 01:46:14 INFO SparkContext: Added JAR file:/home/sara/Desktop/SparkWordCount/target/wordcount-1.0.jar at spark://10.0.2.15:40555/jars/wordcount-1.0.jar with timestamp 1785710773442
+26/08/03 01:46:14 INFO Executor: Starting executor ID driver on host 10.0.2.15
+26/08/03 01:46:14 INFO Executor: OS info Linux, 6.14.0-37-generic, amd64
+26/08/03 01:46:14 INFO Executor: Java version 17.0.19
+26/08/03 01:46:14 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+26/08/03 01:46:14 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@3456558 for default.
+26/08/03 01:46:14 INFO Executor: Fetching spark://10.0.2.15:40555/jars/wordcount-1.0.jar with timestamp 1785710773442
+26/08/03 01:46:14 INFO TransportClientFactory: Successfully created connection to /10.0.2.15:40555 after 36 ms (0 ms spent in bootstraps)
+26/08/03 01:46:14 INFO Utils: Fetching spark://10.0.2.15:40555/jars/wordcount-1.0.jar to /tmp/spark-d838b925-3a19-4e80-8944-a2c53f3c7d4b/userFiles-6771ef45-930c-44f3-8614-ddba5b51fba7/fetchFileTemp9120489364802347987.tmp
+26/08/03 01:46:14 INFO Executor: Adding file:/tmp/spark-d838b925-3a19-4e80-8944-a2c53f3c7d4b/userFiles-6771ef45-930c-44f3-8614-ddba5b51fba7/wordcount-1.0.jar to class loader default
+26/08/03 01:46:14 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35407.
+26/08/03 01:46:14 INFO NettyBlockTransferService: Server created on 10.0.2.15:35407
+26/08/03 01:46:14 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+26/08/03 01:46:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 10.0.2.15, 35407, None)
+26/08/03 01:46:14 INFO BlockManagerMasterEndpoint: Registering block manager 10.0.2.15:35407 with 434.4 MiB RAM, BlockManagerId(driver, 10.0.2.15, 35407, None)
+26/08/03 01:46:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 10.0.2.15, 35407, None)
+26/08/03 01:46:14 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 10.0.2.15, 35407, None)
+26/08/03 01:46:15 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 221.5 KiB, free 434.2 MiB)
+26/08/03 01:46:15 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 32.6 KiB, free 434.2 MiB)
+26/08/03 01:46:15 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 10.0.2.15:35407 (size: 32.6 KiB, free: 434.4 MiB)
+26/08/03 01:46:15 INFO SparkContext: Created broadcast 0 from textFile at WordCount.java:28
+26/08/03 01:46:16 INFO FileInputFormat: Total input files to process : 1
+26/08/03 01:46:16 INFO deprecation: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+26/08/03 01:46:16 INFO HadoopMapRedCommitProtocol: Using output committer class org.apache.hadoop.mapred.FileOutputCommitter
+26/08/03 01:46:16 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+26/08/03 01:46:16 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+26/08/03 01:46:16 INFO SparkContext: Starting job: runJob at SparkHadoopWriter.scala:83
+26/08/03 01:46:16 INFO DAGScheduler: Registering RDD 3 (mapToPair at WordCount.java:38) as input to shuffle 0
+26/08/03 01:46:16 INFO DAGScheduler: Got job 0 (runJob at SparkHadoopWriter.scala:83) with 1 output partitions
+26/08/03 01:46:16 INFO DAGScheduler: Final stage: ResultStage 1 (runJob at SparkHadoopWriter.scala:83)
+26/08/03 01:46:16 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+26/08/03 01:46:16 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+26/08/03 01:46:16 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[3] at mapToPair at WordCount.java:38), which has no missing parents
+26/08/03 01:46:16 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 7.4 KiB, free 434.1 MiB)
+26/08/03 01:46:16 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.0 KiB, free 434.1 MiB)
+26/08/03 01:46:16 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 10.0.2.15:35407 (size: 4.0 KiB, free: 434.4 MiB)
+26/08/03 01:46:16 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1580
+26/08/03 01:46:16 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[3] at mapToPair at WordCount.java:38) (first 15 tasks are for partitions Vector(0))
+26/08/03 01:46:16 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+26/08/03 01:46:16 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (10.0.2.15, executor driver, partition 0, ANY, 7835 bytes) 
+26/08/03 01:46:16 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+26/08/03 01:46:16 INFO HadoopRDD: Input split: hdfs://localhost:9000/wordcount/sample.txt:0+250
+26/08/03 01:46:16 ERROR Executor: Exception in task 0.0 in stage 0.0 (TID 0)
+java.lang.AbstractMethodError: Receiver class com.geekcap.javaworld.sparkexample.WordCount$1 does not define or inherit an implementation of the resolved method 'abstract java.util.Iterator call(java.lang.Object)' of interface org.apache.spark.api.java.function.FlatMapFunction.
+	at org.apache.spark.api.java.JavaRDDLike.$anonfun$flatMap$1(JavaRDDLike.scala:125)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.util.collection.ExternalSorter.insertAll(ExternalSorter.scala:197)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:63)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+26/08/03 01:46:16 WARN TaskSetManager: Lost task 0.0 in stage 0.0 (TID 0) (10.0.2.15 executor driver): java.lang.AbstractMethodError: Receiver class com.geekcap.javaworld.sparkexample.WordCount$1 does not define or inherit an implementation of the resolved method 'abstract java.util.Iterator call(java.lang.Object)' of interface org.apache.spark.api.java.function.FlatMapFunction.
+	at org.apache.spark.api.java.JavaRDDLike.$anonfun$flatMap$1(JavaRDDLike.scala:125)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.util.collection.ExternalSorter.insertAll(ExternalSorter.scala:197)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:63)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+26/08/03 01:46:16 ERROR TaskSetManager: Task 0 in stage 0.0 failed 1 times; aborting job
+26/08/03 01:46:16 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+26/08/03 01:46:16 INFO TaskSchedulerImpl: Cancelling stage 0
+26/08/03 01:46:16 INFO TaskSchedulerImpl: Killing all running tasks in stage 0: Stage cancelled: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (10.0.2.15 executor driver): java.lang.AbstractMethodError: Receiver class com.geekcap.javaworld.sparkexample.WordCount$1 does not define or inherit an implementation of the resolved method 'abstract java.util.Iterator call(java.lang.Object)' of interface org.apache.spark.api.java.function.FlatMapFunction.
+	at org.apache.spark.api.java.JavaRDDLike.$anonfun$flatMap$1(JavaRDDLike.scala:125)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.util.collection.ExternalSorter.insertAll(ExternalSorter.scala:197)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:63)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:
+26/08/03 01:46:16 INFO DAGScheduler: ShuffleMapStage 0 (mapToPair at WordCount.java:38) failed in 0.423 s due to Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (10.0.2.15 executor driver): java.lang.AbstractMethodError: Receiver class com.geekcap.javaworld.sparkexample.WordCount$1 does not define or inherit an implementation of the resolved method 'abstract java.util.Iterator call(java.lang.Object)' of interface org.apache.spark.api.java.function.FlatMapFunction.
+	at org.apache.spark.api.java.JavaRDDLike.$anonfun$flatMap$1(JavaRDDLike.scala:125)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.util.collection.ExternalSorter.insertAll(ExternalSorter.scala:197)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:63)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:
+26/08/03 01:46:16 INFO DAGScheduler: Job 0 failed: runJob at SparkHadoopWriter.scala:83, took 0.492503 s
+26/08/03 01:46:16 ERROR SparkHadoopWriter: Aborting job job_202608030146166127583165020562306_0005.
+org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (10.0.2.15 executor driver): java.lang.AbstractMethodError: Receiver class com.geekcap.javaworld.sparkexample.WordCount$1 does not define or inherit an implementation of the resolved method 'abstract java.util.Iterator call(java.lang.Object)' of interface org.apache.spark.api.java.function.FlatMapFunction.
+	at org.apache.spark.api.java.JavaRDDLike.$anonfun$flatMap$1(JavaRDDLike.scala:125)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.util.collection.ExternalSorter.insertAll(ExternalSorter.scala:197)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:63)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2844)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2780)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2779)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2779)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1242)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1242)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1242)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3048)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2982)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2971)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:984)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2398)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2419)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2451)
+	at org.apache.spark.internal.io.SparkHadoopWriter$.write(SparkHadoopWriter.scala:83)
+	at org.apache.spark.rdd.PairRDDFunctions.$anonfun$saveAsHadoopDataset$1(PairRDDFunctions.scala:1091)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:407)
+	at org.apache.spark.rdd.PairRDDFunctions.saveAsHadoopDataset(PairRDDFunctions.scala:1089)
+	at org.apache.spark.rdd.PairRDDFunctions.$anonfun$saveAsHadoopFile$4(PairRDDFunctions.scala:1062)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:407)
+	at org.apache.spark.rdd.PairRDDFunctions.saveAsHadoopFile(PairRDDFunctions.scala:1027)
+	at org.apache.spark.rdd.PairRDDFunctions.$anonfun$saveAsHadoopFile$3(PairRDDFunctions.scala:1009)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:407)
+	at org.apache.spark.rdd.PairRDDFunctions.saveAsHadoopFile(PairRDDFunctions.scala:1008)
+	at org.apache.spark.rdd.PairRDDFunctions.$anonfun$saveAsHadoopFile$2(PairRDDFunctions.scala:965)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:407)
+	at org.apache.spark.rdd.PairRDDFunctions.saveAsHadoopFile(PairRDDFunctions.scala:963)
+	at org.apache.spark.rdd.RDD.$anonfun$saveAsTextFile$2(RDD.scala:1620)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:407)
+	at org.apache.spark.rdd.RDD.saveAsTextFile(RDD.scala:1620)
+	at org.apache.spark.rdd.RDD.$anonfun$saveAsTextFile$1(RDD.scala:1606)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:407)
+	at org.apache.spark.rdd.RDD.saveAsTextFile(RDD.scala:1606)
+	at org.apache.spark.api.java.JavaRDDLike.saveAsTextFile(JavaRDDLike.scala:564)
+	at org.apache.spark.api.java.JavaRDDLike.saveAsTextFile$(JavaRDDLike.scala:563)
+	at org.apache.spark.api.java.AbstractJavaRDDLike.saveAsTextFile(JavaRDDLike.scala:45)
+	at com.geekcap.javaworld.sparkexample.WordCount.main(WordCount.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.spark.deploy.JavaMainApplication.start(SparkApplication.scala:52)
+	at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:1029)
+	at org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:194)
+	at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:217)
+	at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:91)
+	at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1120)
+	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1129)
+	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+Caused by: java.lang.AbstractMethodError: Receiver class com.geekcap.javaworld.sparkexample.WordCount$1 does not define or inherit an implementation of the resolved method 'abstract java.util.Iterator call(java.lang.Object)' of interface org.apache.spark.api.java.function.FlatMapFunction.
+	at org.apache.spark.api.java.JavaRDDLike.$anonfun$flatMap$1(JavaRDDLike.scala:125)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.util.collection.ExternalSorter.insertAll(ExternalSorter.scala:197)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:63)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Exception in thread "main" org.apache.spark.SparkException: Job aborted.
+	at org.apache.spark.internal.io.SparkHadoopWriter$.write(SparkHadoopWriter.scala:106)
+	at org.apache.spark.rdd.PairRDDFunctions.$anonfun$saveAsHadoopDataset$1(PairRDDFunctions.scala:1091)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:407)
+	at org.apache.spark.rdd.PairRDDFunctions.saveAsHadoopDataset(PairRDDFunctions.scala:1089)
+	at org.apache.spark.rdd.PairRDDFunctions.$anonfun$saveAsHadoopFile$4(PairRDDFunctions.scala:1062)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:407)
+	at org.apache.spark.rdd.PairRDDFunctions.saveAsHadoopFile(PairRDDFunctions.scala:1027)
+	at org.apache.spark.rdd.PairRDDFunctions.$anonfun$saveAsHadoopFile$3(PairRDDFunctions.scala:1009)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:407)
+	at org.apache.spark.rdd.PairRDDFunctions.saveAsHadoopFile(PairRDDFunctions.scala:1008)
+	at org.apache.spark.rdd.PairRDDFunctions.$anonfun$saveAsHadoopFile$2(PairRDDFunctions.scala:965)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:407)
+	at org.apache.spark.rdd.PairRDDFunctions.saveAsHadoopFile(PairRDDFunctions.scala:963)
+	at org.apache.spark.rdd.RDD.$anonfun$saveAsTextFile$2(RDD.scala:1620)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:407)
+	at org.apache.spark.rdd.RDD.saveAsTextFile(RDD.scala:1620)
+	at org.apache.spark.rdd.RDD.$anonfun$saveAsTextFile$1(RDD.scala:1606)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:407)
+	at org.apache.spark.rdd.RDD.saveAsTextFile(RDD.scala:1606)
+	at org.apache.spark.api.java.JavaRDDLike.saveAsTextFile(JavaRDDLike.scala:564)
+	at org.apache.spark.api.java.JavaRDDLike.saveAsTextFile$(JavaRDDLike.scala:563)
+	at org.apache.spark.api.java.AbstractJavaRDDLike.saveAsTextFile(JavaRDDLike.scala:45)
+	at com.geekcap.javaworld.sparkexample.WordCount.main(WordCount.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.spark.deploy.JavaMainApplication.start(SparkApplication.scala:52)
+	at org.apache.spark.deploy.SparkSubmit.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:1029)
+	at org.apache.spark.deploy.SparkSubmit.doRunMain$1(SparkSubmit.scala:194)
+	at org.apache.spark.deploy.SparkSubmit.submit(SparkSubmit.scala:217)
+	at org.apache.spark.deploy.SparkSubmit.doSubmit(SparkSubmit.scala:91)
+	at org.apache.spark.deploy.SparkSubmit$$anon$2.doSubmit(SparkSubmit.scala:1120)
+	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:1129)
+	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+Caused by: org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 1 times, most recent failure: Lost task 0.0 in stage 0.0 (TID 0) (10.0.2.15 executor driver): java.lang.AbstractMethodError: Receiver class com.geekcap.javaworld.sparkexample.WordCount$1 does not define or inherit an implementation of the resolved method 'abstract java.util.Iterator call(java.lang.Object)' of interface org.apache.spark.api.java.function.FlatMapFunction.
+	at org.apache.spark.api.java.JavaRDDLike.$anonfun$flatMap$1(JavaRDDLike.scala:125)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.util.collection.ExternalSorter.insertAll(ExternalSorter.scala:197)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:63)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Driver stacktrace:
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2844)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2780)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2779)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2779)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1242)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1242)
+	at scala.Option.foreach(Option.scala:407)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1242)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3048)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2982)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2971)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:984)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2398)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2419)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2451)
+	at org.apache.spark.internal.io.SparkHadoopWriter$.write(SparkHadoopWriter.scala:83)
+	... 52 more
+Caused by: java.lang.AbstractMethodError: Receiver class com.geekcap.javaworld.sparkexample.WordCount$1 does not define or inherit an implementation of the resolved method 'abstract java.util.Iterator call(java.lang.Object)' of interface org.apache.spark.api.java.function.FlatMapFunction.
+	at org.apache.spark.api.java.JavaRDDLike.$anonfun$flatMap$1(JavaRDDLike.scala:125)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.util.collection.ExternalSorter.insertAll(ExternalSorter.scala:197)
+	at org.apache.spark.shuffle.sort.SortShuffleWriter.write(SortShuffleWriter.scala:63)
+	at org.apache.spark.shuffle.ShuffleWriteProcessor.write(ShuffleWriteProcessor.scala:59)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:104)
+	at org.apache.spark.scheduler.ShuffleMapTask.runTask(ShuffleMapTask.scala:54)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:161)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+26/08/03 01:46:16 INFO SparkContext: Invoking stop() from shutdown hook
+26/08/03 01:46:16 INFO SparkContext: SparkContext is stopping with exitCode 0.
+26/08/03 01:46:16 INFO SparkUI: Stopped Spark web UI at http://10.0.2.15:4040
+26/08/03 01:46:16 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+26/08/03 01:46:16 INFO MemoryStore: MemoryStore cleared
+26/08/03 01:46:16 INFO BlockManager: BlockManager stopped
+26/08/03 01:46:16 INFO BlockManagerMaster: BlockManagerMaster stopped
+26/08/03 01:46:16 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+26/08/03 01:46:16 INFO SparkContext: Successfully stopped SparkContext
+26/08/03 01:46:16 INFO ShutdownHookManager: Shutdown hook called
+26/08/03 01:46:16 INFO ShutdownHookManager: Deleting directory /tmp/spark-d838b925-3a19-4e80-8944-a2c53f3c7d4b
+26/08/03 01:46:16 INFO ShutdownHookManager: Deleting directory /tmp/spark-68fc6ccf-94e5-4cd9-89c9-d2685d6cf8e5

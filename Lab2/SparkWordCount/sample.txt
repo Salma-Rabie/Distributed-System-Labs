@@ -1,0 +1,11 @@
+Spark is a fast analytics engine.
+
+Apache Spark processes big data quickly.
+
+Spark Spark Hadoop Hadoop
+
+Word Count is one of the simplest MapReduce examples.
+
+Alexandria University teaches Spark and Hadoop.
+
+Java is used to write Spark applications.
